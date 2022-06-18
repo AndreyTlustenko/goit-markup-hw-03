@@ -5,27 +5,52 @@
 --background-title:#2F303A;
 --background-button: #F5F4FA;
 --button-o:#188CE8;
+--header-width: 1200px;
 }
 
 body { font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    color: var(--primary_text-color)
+font-size: 14px;
+color: var(--primary_text-color);
+}
+h1,
+h2,
+h3, 
+p {margin: 0;}
+img { display: block; max-width: auto; height: auto; }
+
+.container   {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
     }
+
 .header { font-family: 'Roboto';
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
+border-bottom: 1px solid #ECECEC;
+display: flex;
+width: var(--header-width);
 }
-.header-list {text-decoration: none; color: var(--title-color)}
-.list { text-decoration: none; color: var(--primary_text-color);}
+.list-head {display: flex;  }
+.list-head:not(:last-child) {margin-right: 50px;}
+.header-list {
+    text-decoration: none; color: var(--title-color);}
+.header-nav {display: block; padding-top: 32px; padding-bottom: 32px;}
+.list { text-decoration: none; color: var(--primary_text-color);
+margin: 0; padding: 0;}
+
 .header .logo {color: var(--accent-color);}
+
 .header a:hover,
 .header a:focus { color: var(--accent-color);}
 
 .curent-portfolio, 
 .curent-studio {color: var(--accent-color);}
 
-.logo { 
+.logo { display: block; padding-top: 32px; padding-bottom: 32px;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     font-style: normal;
@@ -33,6 +58,7 @@ line-height: 1.14;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    padding-left: 40px;
     }
 .logo-web {color: var(--title-color); font-style: normal;}
 .h1 {background: var(--background-title); 
@@ -44,8 +70,37 @@ line-height: 1.14;
     text-align: center;
     text-transform: uppercase;
 }
+
 ul {list-style: none;}
+
 a {text-decoration: none; }
+
+.list-botton {width: var(--header-width);
+display: inline-flex; padding: 0;
+
+}
+
+.botton-item { margin-left: 8px;
+    align-items: center; 
+     }
+
+.class-list {width: var(--header-width);
+    padding: 0;
+    outline: 1px solid tomato;
+    display: flex;
+    flex-wrap: wrap;;
+    padding-bottom: 94px;
+    } 
+.section {padding-top: 94px;}
+
+.card-item {
+    margin-left: 30px;
+    margin-bottom: 30px; }
+.work-list {display: inline-block; flex-basis: calc(100% / 3 ); 
+}
+.comand-list {background: var(--background-button);
+    display: flex;
+    flex-wrap: wrap;}
 .button {
 font-family: inherit;
 font-weight: 500;
@@ -96,7 +151,6 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
  0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.comand-list {background: var(--background-button);}
 .h2-title {color: var(--title-color);
     font-weight: 700;
     font-size: 36px;
@@ -131,14 +185,14 @@ font-size: 16px;
 line-height: 1.19;
 text-decoration: none;
 }
-.title {color: var(--title-color);  
+.card-title {color: var(--title-color);  
     font-family: inherit;
     font-weight: 700;
     font-size: 18px;
     line-height: 2; 
     text-decoration: none;
    }
-.text { font-family: inherit; 
+.card-text { font-family: inherit; 
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
@@ -146,8 +200,8 @@ text-decoration: none;
     color: var(--primary_text-color);
     }
 
-.footer { background: var(--background-title);; 
-     
+.footer { background: var(--background-title); 
+    width: var(--header-width);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;}
