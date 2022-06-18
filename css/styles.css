@@ -34,7 +34,7 @@ border-bottom: 1px solid #ECECEC;
 display: flex;
 width: var(--header-width);
 }
-.list-head {display: flex;  }
+.list-head {display: flex; margin-left: auto; }
 .list-head:not(:last-child) {margin-right: 50px;}
 .header-list {
     text-decoration: none; color: var(--title-color);}
