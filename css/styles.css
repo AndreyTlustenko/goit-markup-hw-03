@@ -256,7 +256,7 @@ padding: 10px, 70px, 30px, 70px;
     margin-bottom: calc( -1 * 94px);
     
 }
-.list-footer {padding: 0;}
+
 footer.logo {font-family: "Ralevey", sans-serif;
     text-decoration: none;
     font-style: normal;
@@ -265,9 +265,8 @@ footer.logo {font-family: "Ralevey", sans-serif;
     font-size: 26px;
     line-height: 1.19;}
 .footer span {color: var(--button-color);}
-.footer-map { text-decoration: none; color: var(--button-color); font-style: normal;}
-.footer.list { color: var(--button-color);}
-.footer-list {text-decoration: none; color: rgba(255, 255, 255, 0.6); font-style: normal;}
+.footer-map {  display: block; padding-top: 20px; text-decoration: none; color: var(--button-color); font-style: normal;}
+.footer-list { display: block; padding-top: 9px; color: var(--button-color);text-decoration: none; color: rgba(255, 255, 255, 0.6); font-style: normal;}
 .footer a:hover,
 .footer a:focus
  { color: var(--accent-color)}
