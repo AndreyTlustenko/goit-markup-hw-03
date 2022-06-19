@@ -13,7 +13,7 @@ font-size: 14px;
 color: var(--primary_text-color);
 
 }
-
+h1,h2.h3, p {margin: 0;}
 
  
  img { display: block; max-width: auto; height: auto; }
@@ -26,6 +26,7 @@ color: var(--primary_text-color);
     padding-bottom: 94px;
     padding-top: 94px;
     width: 1200px;
+
      }
 
 .header { font-family: 'Roboto';
@@ -120,8 +121,15 @@ a {text-decoration: none; }
 .work-list {display: inline-block; flex-basis: calc(100% / 3 ); 
 }
 .comand-list {background: var(--background-button);
-    display: flex;
-    flex-wrap: wrap;}
+    display: flex; padding-left: 0; }
+.comand-list-list {margin-right: 30px; 
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    border: 1px solid #d86767;}
+    
+   
+
 .button {padding: 6px 22px;
 font-family: inherit;
 font-weight: 500;
@@ -152,7 +160,7 @@ border-radius: 4px;
     line-height: 1.88;
     display: flex;
     align-items: center;
-    text-align: center;
+    margin-left: auto; margin-right: auto;
     border: none;
     border-radius: 4px;}
 .button-order:hover,
@@ -177,7 +185,9 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    text-align: center; }
+    text-align: center; 
+    padding-bottom: 50px;
+margin: 0;}
 .about {padding: 0; display: flex; margin-left: 30px ;
 }
 .h3-title { margin-right: 30px;
