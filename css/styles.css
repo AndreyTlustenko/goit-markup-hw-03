@@ -34,7 +34,7 @@ h1,h2.h3, p {margin: 0;}
     padding-top: 200px; margin-bottom: 94px;}   
 .section-comand {background: var(--background-button);
     padding-bottom: 94px;}
-.section-card {padding-top: 0px}
+.section-card {padding-top: 0px; padding-bottom: 94px;}
 .section-footer {padding-top: 60px; background-color: var(--background-title)}
 
 .header { font-family: 'Roboto';
