@@ -16,7 +16,7 @@ color: var(--primary_text-color);
 h1,h2.h3, p {margin: 0;}
 
  
- img { display: block; max-width: auto; height: auto; }
+ img { display: block; max-width: 100%; height: auto; }
 
 .container   {
     margin-left: auto;
@@ -97,7 +97,7 @@ height: 80px;
     }
 
 ul {list-style: none; padding-left: 0; margin: 0;}
-
+.style {display: flex;}
 a {text-decoration: none; }
 
 .botton-nav { display: flex; }
@@ -122,8 +122,8 @@ a {text-decoration: none; }
 .border {border: 1px solid #EEEEEE;}
 
 .work-list {display: inline-block; 
-    
-}
+   }
+.work-list:not(:last-child) {margin-left: 30px;}
 .comand-list {background: var(--background-button);
     display: flex; padding-left: 0; }
 .comand-list-list {background-color: var(--button-color);
