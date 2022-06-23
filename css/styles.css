@@ -36,7 +36,8 @@ h1,h2.h3, p {margin: 0;}
     padding-bottom: 200px;
     padding-top: 200px; margin-bottom: 94px;}   
 .section-comand {background: var(--background-button);
-    padding-bottom: 94px; padding-top: 94px; box-sizing:border-box;
+    padding-bottom: 94px; padding-top: 94px; 
+    
 }
 
 .container-header {display: flex;
@@ -80,7 +81,7 @@ border-bottom: 1px solid #ECECEC;
 .list-botton {width: var(--header-width); 
     display: flex; ;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 .header a:hover,
 .header a:focus { color: var(--accent-color);}
@@ -125,7 +126,7 @@ a {text-decoration: none; }
 .card-list {
     display: flex;
     flex-wrap: wrap;
-    margin: calc(-1 * var(--indent) / 2);
+    
            } 
 
 .card-item {  
@@ -151,7 +152,9 @@ a {text-decoration: none; }
     border-radius: 0px 0px 4px 4px;
     }
 .comand-list { 
-    background-color: var(--background-button);}
+    background-color: var(--background-button);
+
+}
 .comand-title { 
     font-family: inherit;
     color: var(--title-color); 
