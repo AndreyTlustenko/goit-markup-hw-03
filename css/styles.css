@@ -6,6 +6,8 @@
 --background-button: #F5F4FA;
 --button-o:#188CE8;
 --header-width: 1200px;
+--items: 3;         /* кількість карток в рядку */
+--indent: 30px;     /* відступи між картками */
 }
 
 body { font-family: "Roboto", sans-serif;
@@ -24,6 +26,7 @@ h1,h2.h3, p {margin: 0;}
     padding-left: 15px;
     padding-right: 15px;
     width: 1200px;
+    
      }
 
 .section {
@@ -33,12 +36,16 @@ h1,h2.h3, p {margin: 0;}
     padding-bottom: 200px;
     padding-top: 200px; margin-bottom: 94px;}   
 .section-comand {background: var(--background-button);
-    padding-bottom: 94px; padding-top: 94px;}
+    padding-bottom: 94px; padding-top: 94px; box-sizing:border-box;
+}
 
-.container-header {display: flex; margin-left: auto;
+.container-header {display: flex;
+    align-items: center;
+    margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
-    padding-right: 15px; width: 1200px;}
+    padding-right: 15px; width: 1200px; box-sizing:border-box;
+}
 
 .header { font-family: 'Roboto';
     display: flex; 
@@ -52,7 +59,6 @@ border-bottom: 1px solid #ECECEC;
 }
 
 
- 
 
 .head-nav {display: flex; color: var(--title-color); padding-top: 32px; margin-left: 50px;
     padding-bottom: 32px;  }
@@ -119,11 +125,15 @@ a {text-decoration: none; }
 .card-list {
     display: flex;
     flex-wrap: wrap;
+    margin: calc(-1 * var(--indent) / 2);
            } 
-.card-item:not(:last-child) { margin-right: 30px; }
-.card-item { 
+
+.card-item {  
     margin-right: 30px; 
-    margin-bottom: 30px;  }
+    margin-bottom: 30px;
+    flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
+    margin: calc(var(--indent) / 2);
+}
 
 .border {padding: 20px 24px;
     border: 1px solid #EEEEEE;}
