@@ -34,12 +34,11 @@ h1,h2.h3, p {margin: 0;}
     padding-top: 94px;}
 .section-hero {background-color: var(--background-title);
     padding-bottom: 200px;
-    padding-top: 200px; margin-bottom: 94px;}   
+    padding-top: 200px; }   
 .section-comand {background: var(--background-button);
     padding-bottom: 94px; padding-top: 94px; 
-    
-}
-
+  }
+.section-studia { padding-top: 94px;}
 .container-header {display: flex;
     align-items: center;
     margin-left: auto;
@@ -61,8 +60,7 @@ border-bottom: 1px solid #ECECEC;
 
 
 
-.head-nav {display: flex; color: var(--title-color); padding-top: 32px; margin-left: 50px;
-    padding-bottom: 32px;  }
+.head-nav {display: flex; color: var(--title-color); margin-left: 50px;}
 .head-group {display: flex;  margin-left: auto; padding: 0; }
 
 
@@ -70,7 +68,7 @@ border-bottom: 1px solid #ECECEC;
 
 
 .header-list { display: flex; padding: 0; 
-    text-decoration: none; color: var(--title-color);}
+    text-decoration: none; color: var(--title-color);padding-top: 32px; padding-bottom: 32px;}
 
 .list { display: flex; 
     text-decoration: none; color: var(--primary_text-color);
@@ -87,7 +85,7 @@ border-bottom: 1px solid #ECECEC;
 .header a:focus { color: var(--accent-color);}
 
 .curent-portfolio, 
-.curent-studio {color: var(--accent-color);}
+.curent-studio {color: var(--accent-color); padding-top: 32px; padding-bottom: 32px;}
 
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -164,6 +162,7 @@ font-size: 16px;
 line-height: 1.19;
 text-decoration: none;
 margin-bottom: 10px;
+margin-top: 0;
 
 }
 
@@ -176,7 +175,7 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
 text-decoration: none;
-margin-bottom: 10px;
+
 }
 .card-title {color: var(--title-color);  
     font-family: inherit;
@@ -283,7 +282,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    padding-top: 60px; padding-bottom: 0;
+    padding: 60px 0; 
         
 }
 
